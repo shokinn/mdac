@@ -32,7 +32,7 @@ if [ -n "$1" ] ; then
   if [ -n "$3" ] ; then
     list=`cat $3`
   else
-    list=`echo {a..z}{a..z}{a..z}`
+    list=`echo {{a..z},{0..9}}{{a..z},{0..9}}{{a..z},{0..9}}`
   fi
 else
   echo 'Mass Domain Availability Checker Script 0.0.1'
@@ -73,10 +73,10 @@ if [ $ok ] ; then
      #echo $VAL
      if [[ $VAL == *$string* ]]
      then
-       echo -e "\e[32m$domain.$1 ******FREE******"
+       echo -e "🎉 \e[32m$domain.$1 ******FREE******"
        echo "$domain.$1" >> domain.free
      else
-       echo -e "\e[31m$domain.$1 TAKEN :-("
+       echo -e "😭 \e[31m$domain.$1 TAKEN"
      fi
      #echo $domain >> wanted.results
      #`whois $domain >> wanted.results`

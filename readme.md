@@ -3,13 +3,13 @@ Mass Domain Availability Checker Script
 
 Mass Domain Availability Checker is an easy to use tool.
 
-I was struggling with checking **ALL** 2 char and 3 char domains with the .hu TLD.  
+I was struggling with checking **ALL** 2 char and 3 char domains with the .de TLD.  
 I needed a tool to check them easily, so... here it is! :)
 
 Version
 ----
 
-0.0.1
+0.0.2
 
 Installation
 --------------
@@ -19,7 +19,7 @@ If you do not have "whois" installed, the script tries to 'sudo apt-get install 
 git clone http://github.com/hocza/mdac
 cd mdac
 chmod +x domain.sh
-./domain.sh
+./domain.sh de free
 ```
 
 ##### Configuration
