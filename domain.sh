@@ -35,9 +35,10 @@ if [ -n "$1" ] ; then
     list=`echo {{a..z},{0..9}}{{a..z},{0..9}}{{a..z},{0..9}}`
   fi
 else
-  echo 'Mass Domain Availability Checker Script 0.0.1'
+  echo 'Mass Domain Availability Checker Script 0.0.2'
   echo '2014 - Jozsef Hocza <jozsef@hocza.com>'
-  echo 'Github: github.com/hocza/'
+  echo '2023 - Philip Henning <mail@philip-henning.com>'
+  echo 'Github: github.com/shokinn/mdac'
   echo '--------------------------'
   echo 'The script by default checks the permutation of 3 characters. (a..z)'
   echo 'Or, you can use your own dictionary'
